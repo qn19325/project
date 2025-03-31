@@ -5,6 +5,10 @@
 		}
 	],
 	"settings": {
+		"search.exclude": {
+			"node_modules/": true,
+			"pnpm-lock.yaml": true,
+		},
 		"editor.codeActionsOnSave": {
 			"source.fixAll.eslint": "always",
 			"source.fixAll.stylelint": "always"
