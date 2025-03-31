@@ -9,5 +9,12 @@
 			"source.fixAll.eslint": "always",
 			"source.fixAll.stylelint": "always"
 		},
+		"editor.formatOnSave": true,
+		"[javascript]": {
+			"editor.defaultFormatter": "esbenp.prettier-vscode",
+		},
+		"[typescript]": {
+			"editor.defaultFormatter": "esbenp.prettier-vscode",
+		}
 	}
 }
