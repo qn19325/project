@@ -2,16 +2,23 @@
   "compilerOptions": {
     "target": "ESNext",
     "module": "ESNext",
+    "esModuleInterop": true,
+
+    /* Bundler Mode */
     "moduleResolution": "bundler",
     "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true,
     "jsx": "preserve",
     "jsxImportSource": "solid-js",
-    "allowJs": true,
-    "strict": true,
-    "noEmit": true,
     "types": ["vinxi/types/client"],
     "isolatedModules": true,
+    "noEmit": true,
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "forceConsistentCasingInFileNames": true,
     "paths": {
       "~/*": ["./src/*"]
     }
