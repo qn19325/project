@@ -1,15 +1,16 @@
-import { createSignal } from "solid-js";
 import "./app.css";
 
 export default function App() {
-    const [capture, setCapture] = createSignal(0);
+    const handleCapture = () => {
+        console.log("Capture");
+    };
 
     return (
         <main>
             <h1>Project</h1>
-            <p>Function will be an application that can scan documents and interpret the content.</p>
-            <button class="increment" onClick={() => setCapture(capture() + 1)} type="button">
-                Capture: {capture()}
+            <p>Scan documents and Interpret the content.</p>
+            <button class="increment" onClick={handleCapture} type="button">
+                Capture
             </button>
         </main>
     );
