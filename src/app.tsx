@@ -1,8 +1,13 @@
 import "./app.css";
 
+const fetchUser = async (id: number) => {
+    const response = await fetch(`https://swapi.dev/api/people/${id}/`);
+    return response.json();
+};
+
 export default function App() {
     const handleCapture = () => {
-        console.log("Capture");
+        fetchUser(1).then((response) => console.log(response));
     };
 
     return (
