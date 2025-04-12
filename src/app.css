@@ -1,15 +1,12 @@
 body {
   font-family: Gordita, Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-}
-
-a {
-  margin-right: 1rem;
-}
-
-main {
-  text-align: center;
-  padding: 1em;
-  margin: 0 auto;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 h1 {
@@ -17,15 +14,12 @@ h1 {
   text-transform: uppercase;
   font-size: 4rem;
   font-weight: 100;
-  line-height: 1.1;
-  margin: 4rem auto;
-  max-width: 14rem;
 }
 
-p {
-  max-width: 14rem;
-  margin: 2rem auto;
-  line-height: 1.35;
+div {
+  /* margin: 2rem auto; */
+  max-width: 80vw;
+  text-align: center;
 }
 
 @media (width >= 480px) {
@@ -36,26 +30,4 @@ p {
   p {
     max-width: none;
   }
-}
-
-.increment {
-  font-family: inherit;
-  font-size: inherit;
-  padding: 1em 2em;
-  color: #335d92;
-  background-color: rgb(68 107 158 / 10%);
-  border-radius: 2em;
-  border: 2px solid rgb(68 107 158 / 0%);
-  outline: none;
-  width: 200px;
-  font-variant-numeric: tabular-nums;
-  cursor: pointer;
-}
-
-.increment:focus {
-  border: 2px solid #335d92;
-}
-
-.increment:active {
-  background-color: rgb(68 107 158 / 20%);
 }
